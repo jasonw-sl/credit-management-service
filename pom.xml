@@ -80,15 +80,13 @@
             <id>failsafe</id>
             <build>
                 <plugins>
-                    <plugins>
-                        <plugin>
-                            <artifactId>maven-surefure-plugin</artifactId>
-                            <version>${maven-failsafe-plugin}</version>
-                            <configuration>
-                                <skipTests>${skip.surefire.tests}</skipTests>
-                            </configuration>
-                        </plugin>
-                    </plugins>
+                    <plugin>
+                        <artifactId>maven-surefure-plugin</artifactId>
+                        <version>${maven-failsafe-plugin}</version>
+                        <configuration>
+                            <skipTests>${skip.surefire.tests}</skipTests>
+                        </configuration>
+                    </plugin>
                     <plugin>
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <version>${maven-failsafe-plugin}</version>
